@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f36dd8f-a0c6-4195-bf95-96b5c3ed796c" name="Changes" comment="new pr">
+    <list default="true" id="2f36dd8f-a0c6-4195-bf95-96b5c3ed796c" name="Changes" comment="new pr2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -89,6 +89,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ЫАПАЫЧ" />
     <MESSAGE value="new pr" />
-    <option name="LAST_COMMIT_MESSAGE" value="new pr" />
+    <MESSAGE value="new pr2" />
+    <option name="LAST_COMMIT_MESSAGE" value="new pr2" />
   </component>
 </project>

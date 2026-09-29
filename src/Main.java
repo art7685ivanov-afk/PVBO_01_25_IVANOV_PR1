@@ -1,26 +1,19 @@
 //import java.util.Scanner;
-//
 //public class Main {
 //    public static void main(String[] args) {
 //        Scanner scanner = new Scanner(System.in);
-//
 //        System.out.print("Введите количество элементов массива: ");
 //        int n = scanner.nextInt();
-//
 //        int[] array = new int[n];
-//
 //        System.out.println("Введите элементы массива:");
 //        for (int i = 0; i < n; i++) {
 //            array[i] = scanner.nextInt();
 //        }
-//
 //        int sum = 0;
 //        for (int i = 0; i < n; i++) {
 //            sum += array[i];
 //        }
-//
 //        double average = (double) sum / n;
-//
 //        System.out.println("Сумма элементов: " + sum);
 //        System.out.println("Среднее арифметическое: " + average);
 //
@@ -873,5 +866,138 @@
 //        }
 //
 //        scanner.close();
+//    }
+//}
+
+
+
+//pr3
+//#1
+//import java.util.Arrays;
+//import java.util.Random;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        int size = 10;
+//
+//        double[] arr1 = new double[size];
+//        double[] arr2 = new double[size];
+//
+//        for (int i = 0; i < size; i++) {
+//            arr1[i] = Math.random() * 100;
+//        }
+//
+//        Random random = new Random();
+//        for (int i = 0; i < size; i++) {
+//            arr2[i] = random.nextDouble() * 100;
+//        }
+//
+//        System.out.println("Массив 1 (Math.random) до сортировки:");
+//        System.out.println(Arrays.toString(arr1));
+//
+//        System.out.println("Массив 2 (Random) до сортировки:");
+//        System.out.println(Arrays.toString(arr2));
+//
+//        Arrays.sort(arr1);
+//        Arrays.sort(arr2);
+//
+//        System.out.println("\nМассив 1 (Math.random) после сортировки:");
+//        System.out.println(Arrays.toString(arr1));
+//
+//        System.out.println("Массив 2 (Random) после сортировки:");
+//        System.out.println(Arrays.toString(arr2));
+//    }
+//}
+
+//#4
+//import java.util.Arrays;
+//import java.util.Random;
+//import java.util.Scanner;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+//        int n = 0;
+//
+//        while (true) {
+//            System.out.print("Введите размер массива (натуральное число больше 0): ");
+//            if (scanner.hasNextInt()) {
+//                n = scanner.nextInt();
+//                if (n > 0) {
+//                    break;
+//                } else {
+//                    System.out.println("Число должно быть больше 0. Повторите ввод.");
+//                }
+//            } else {
+//                System.out.println("Некорректный ввод. Введите целое число.");
+//                scanner.next();
+//            }
+//        }
+//
+//        int[] arr = new int[n];
+//        Random random = new Random();
+//
+//        for (int i = 0; i < n; i++) {
+//            arr[i] = random.nextInt(n + 1);
+//        }
+//
+//        System.out.println("Исходный массив:");
+//        System.out.println(Arrays.toString(arr));
+//
+//        int evenCount = 0;
+//        for (int num : arr) {
+//            if (num % 2 == 0) {
+//                evenCount++;
+//            }
+//        }
+//
+//        int[] evenArr = new int[evenCount];
+//        int index = 0;
+//        for (int num : arr) {
+//            if (num % 2 == 0) {
+//                evenArr[index++] = num;
+//            }
+//        }
+//
+//        if (evenCount > 0) {
+//            System.out.println("Массив четных элементов:");
+//            System.out.println(Arrays.toString(evenArr));
+//        } else {
+//            System.out.println("Четных элементов в массиве нет.");
+//        }
+//
+//        scanner.close();
+//    }
+//}
+
+
+//#3
+//import java.util.Arrays;
+//import java.util.Random;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        int[] arr = new int[4];
+//        Random random = new Random();
+//
+//        for (int i = 0; i < arr.length; i++) {
+//            arr[i] = random.nextInt(90) + 10;
+//        }
+//
+//        System.out.println(Arrays.toString(arr));
+//
+//        boolean isIncreasing = true;
+//        for (int i = 0; i < arr.length - 1; i++) {
+//            if (arr[i] >= arr[i + 1]) {
+//                isIncreasing = false;
+//                break;
+//            }
+//        }
+//
+//        if (isIncreasing) {
+//            System.out.println("Массив является строго возрастающей последовательностью.");
+//        } else {
+//            System.out.println("Массив не является строго возрастающей последовательностью.");
+//        }
 //    }
 //}
